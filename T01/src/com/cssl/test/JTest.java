@@ -43,8 +43,10 @@ public class JTest {
 		session = factory.openSession();
 		edao = session.getMapper(EmpDao.class);
 	}
-	
-	
+
+	/**
+	 * 加了个注释
+	 */
 	@Test
 	public void testSelect() {
 		List<Emp> selectAll = edao.selectAll();
